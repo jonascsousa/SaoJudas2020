@@ -7,5 +7,10 @@ public  abstract class Figura {
 	}
 
 	public abstract double area();
+
+	public double perimetro() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
 }

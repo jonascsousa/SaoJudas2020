@@ -1,20 +1,17 @@
 package eng2020_1_a01;
 
 public class Circulo extends Figura {
-	
+
 	private double raio;
 	
 	public Circulo(double raio) {
 		this.raio = raio;
-		// TODO Auto-generated constructor stub
 	}
-
+	
 	@Override
 	public double area() {
-		return Math.PI * Math.pow(raio, 2);
-		
-		// TODO Auto-generated method stub
-		}
+		return Math.PI * raio * raio;
+	}
 
 	public double getRaio() {
 		return raio;
@@ -26,7 +23,13 @@ public class Circulo extends Figura {
 
 	@Override
 	public String toString() {
-		return "Circulo [raio=" + raio + "]";
+		return "Circulo [raio=" + raio + ", perimetro=" + perimetro() + "]";
 	}
 
+	@Override
+	public double perimetro() {
+		return Math.PI * 2 * raio;
+	}
+
+	
 }

@@ -1,10 +1,15 @@
 package eng2020_1_a01;
 
-public abstract class Poligono extends Figura {
-	private double base,altura;
 
-	public Poligono(double base2, double altura2) {
-		// TODO Auto-generated constructor stub
+public abstract class Poligono extends Figura {
+
+	private double base;
+	private double altura;
+	
+	public Poligono(double base, double altura) {
+		this.base = base;
+		this.altura = altura;
+		
 	}
 
 	public double getBase() {
@@ -27,4 +32,7 @@ public abstract class Poligono extends Figura {
 	public String toString() {
 		return "Poligono [base=" + base + ", altura=" + altura + "]";
 	}
-			}
+	
+
+
+}
